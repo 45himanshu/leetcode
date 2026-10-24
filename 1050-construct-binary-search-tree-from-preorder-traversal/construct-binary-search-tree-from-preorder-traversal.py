@@ -16,4 +16,25 @@ class Solution:
         root.left = self.bstFromPreorder(preorder[1:i])
         root.right = self.bstFromPreorder(preorder[i:])
         return root
+
+
+
+
+
+        # # 3 approch 
+        # index = 0
+        # def bst_helper(preorder, boundary):
+        #     nonlocal index
+        #     if index >= len(preorder) or preorder[index] > boundary:
+        #         return None
+
+        #     n = TreeNode(preorder[index])
+        #     index+=1
+
+        #     n.left = bst.helper(preorder, n.val)
+        #     n.right = bst_helper(preoder, boundary)
+
+        #     return n
+
+        #     return bst_helper(preorder, float('info'))
         
